@@ -1,0 +1,26 @@
+<%- include("./partials/head")%>
+<body>
+	<!-- Header -->
+	<%- include("./partials/header")%>
+	<!-- /Header -->
+	
+	<!-- Banner -->
+	<div class="banner"></div>
+    <!-- /Banner -->
+    <h1> <%= title %> </h1>
+    <h2> <%= producto.name %> </h2>
+    <p> <%= producto.description %></p>
+    <p> <%= producto.price %></p>
+    <p> <%= producto.discount %></p>
+    <img src="/images/products/<%= producto.image %>">
+    <p> <%= producto.description %></p>
+
+
+
+
+    
+    <!-- footer -->
+	<%- include("./partials/footer")%>
+	<!-- /footer -->
+</body>
+</html>
