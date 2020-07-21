@@ -27,7 +27,7 @@
 						<article class="product-box_data">
 							<% let precioFinal = visitado.price -(visitado.discount*visitado.price/100)
 							precioFinal = Math.round(precioFinal) %>
-							<h2>$ <%=(precioFinal) %></h2>
+							<h2>$ <%=toThousand(precioFinal) %></h2>
 
 							<% if (visitado.discount > 0) { %>
 								<span><%= visitado.discount %>% OFF</span>
@@ -64,7 +64,7 @@
 						<article class="product-box_data">
 							<% let precioFinal = oferta.price - (oferta.discount*oferta.price/100)
 							precioFinal = Math.round(precioFinal) %>
-							<h2><%=(precioFinal)%></h2>
+							<h2><%=toThousand(precioFinal)%></h2>
 							<% if (oferta.discount > 0) {%>
 							<span><%=oferta.discount%>% OFF</span>
 							<% } %>
